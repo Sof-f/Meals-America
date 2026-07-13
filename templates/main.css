@@ -5,7 +5,7 @@ a{
 
 
 .container{
-    padding: 30px 190px;
+    padding: 20px 190px;
 }
 
 .head__content{
@@ -29,13 +29,19 @@ a{
     font-style: Regular;
     font-size: 16px;
     cursor: pointer;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.nav__item:hover{
+    transition: 0.2s;
+    color: #08ac37;
 }
 
 .head__btn{
     background-color: #05581C;
     color: #fff;
     border-radius:80px ;
-    padding: 10px 25px;
+    padding: 20px 45px;
     font-family: Stolzl;
     font-weight: 700;
     font-style: Bold;
@@ -43,6 +49,7 @@ a{
     text-align: center;
     vertical-align: middle;
     text-transform: uppercase;
+    font-family: "Ubuntu", sans-serif;
 
 }
 
@@ -66,7 +73,58 @@ a{
     position: absolute;
     z-index: 3;
     margin-top: 100px;
+    width: 580px;
 
+}
+
+.start__title{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 58px;
+    vertical-align: middle;
+    color: #05581C;
+}
+
+.start__title::after{
+    content: 'to your doorstep!';
+    display: block;
+    color: #000000;
+}
+
+.start__subtitle{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: Book;
+    font-size: 24px;
+    vertical-align: middle;
+
+}
+
+.btn__start{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 18px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    padding: 15px 33px;
+    border-radius: 32px;
+    cursor: pointer;
+
+}
+
+.white{
+    background-color: transparent;
+    border: 2px solid #05581C;
+    color:#05581C;
+}
+
+.green{
+    background-color: #05581C;
+    color: #fff;
+    border: none;
 }
 
 
