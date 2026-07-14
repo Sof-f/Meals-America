@@ -54,6 +54,12 @@ a{
 
 }
 
+.head__btn:hover{
+    background-color: #fff;
+    color: #05581C;
+    border: 3px solid #05581C;
+}
+
 .start{
     position: relative;
     align-items: center;
@@ -124,6 +130,18 @@ a{
 }
 
 .green{
+    background-color: #05581C;
+    color: #fff;
+    border: none;
+}
+
+.green:hover{
+    background-color: #fff;
+    color: #05581C;
+    border: 3px solid #05581C;
+}
+
+.white:hover{
     background-color: #05581C;
     color: #fff;
     border: none;
@@ -247,6 +265,12 @@ a{
     color: #05581C;
     padding: 15px 26px;
     border-radius: 32px;
+}
+
+.btn__about:hover{
+    background-color: #05581C;
+    color: #fff;
+    border: none;
 }
 
 .why{
