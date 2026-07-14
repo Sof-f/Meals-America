@@ -80,7 +80,7 @@ a{
 .start__description{
     position: absolute;
     z-index: 30;
-    margin-top: 100px;
+    margin-top: 200px;
     width: 580px;
 
 }
@@ -92,6 +92,7 @@ a{
     font-size: 58px;
     vertical-align: middle;
     color: #05581C;
+    margin-top: 20px;
 }
 
 .start__title::after{
@@ -106,6 +107,8 @@ a{
     font-style: Book;
     font-size: 24px;
     vertical-align: middle;
+    margin-top: 50px;
+    margin-bottom: 20px;
 
 }
 
@@ -120,6 +123,7 @@ a{
     padding: 15px 33px;
     border-radius: 32px;
     cursor: pointer;
+    margin-right: 20px;
 
 }
 
@@ -233,6 +237,8 @@ a{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .about__subtitle{
@@ -275,6 +281,7 @@ a{
 
 .why{
     background-color: #f9f9f9;
+    padding-top: 100px;
 }
 
 .content{
@@ -367,3 +374,20 @@ a{
     line-height: 28px;
     color: #4F4F4F;
 }
+
+/* 
+.plan{
+    position: relative;
+    margin-top: 100px;
+    background-color: #05581C;
+    z-index: -10;
+    width: 100%;
+}
+
+.plan__bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+} */
