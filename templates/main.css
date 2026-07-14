@@ -5,7 +5,7 @@ a{
 
 
 .container{
-    padding: 20px 190px;
+    padding: 20px 150px;
 }
 
 .head__content{
@@ -56,6 +56,7 @@ a{
 .start{
     position: relative;
     align-items: center;
+    height: 100vh;
 
 }
 
@@ -64,14 +65,14 @@ a{
     padding: 500px;
     background-color:#F8FFF5;
     position: absolute;
-    z-index: 2;
+    z-index: -10;
     left: -100px;
     overflow-y: hidden;
 }
 
 .start__description{
     position: absolute;
-    z-index: 3;
+    z-index: 30;
     margin-top: 100px;
     width: 580px;
 
@@ -131,6 +132,53 @@ a{
 .start__img{
     position: absolute;
     width: 50%;
-    z-index: 1;
+    z-index: -20;
     right: 0px;
+    height: 100%;
+    
+}
+
+.info{
+    background-color: #f9f9f9;
+    margin-top: 40px;
+}
+
+.info__content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.info__item{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 27px;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.info__img{
+    height: 50px;
+}
+
+.info__description{
+    width: 270px;
+}
+
+.info__title{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    vertical-align: middle;
+
+}
+
+.info__subtitle{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    vertical-align: middle;
 }
