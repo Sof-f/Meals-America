@@ -242,9 +242,104 @@ a{
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
-    background-color: #ffffff;
+    background-color: transparent;
     border: 2px solid #05581C;
     color: #05581C;
     padding: 15px 26px;
     border-radius: 32px;
+}
+
+.why{
+    background-color: #f9f9f9;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.why__images{
+    position: relative;
+}
+
+.why__salad{
+    position: absolute;
+    top: 0;
+    left: -100px;
+}
+
+.why__petrushka{
+    position: absolute;
+    top: 0;
+    left: 200px;
+}
+
+.why__salad2{
+    position: absolute;
+    bottom: 0;
+    left: 200px;
+}
+
+.why__description{
+    width: 500px;
+}
+
+.why__benefits{
+    font-family: "Playwrite ID", sans-serif;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 24px;
+    color: #05581C;
+    margin-bottom: 0px;
+}
+
+.why__title{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 48px;
+    line-height: 56px;
+    vertical-align: middle;
+    margin-top: 0px;
+}
+
+.why__subtitle{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: Book;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.why__list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.why__list-item{
+    display: flex;
+    background-color: #fff;
+    width: 370px;
+    padding: 10px 70px 10px 20px;
+    gap:20px;
+    align-items: center;
+    border-radius: 5px;
+    border-left: 5px solid #05581C;
+}
+
+.why__list-img{
+    height: 50px;
+}
+
+.why__list-title{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 18px;
+    line-height: 28px;
+    color: #4F4F4F;
 }
