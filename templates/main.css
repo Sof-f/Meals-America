@@ -388,7 +388,7 @@ a{
     background-color: #05581C;
     z-index: 10;
     width: 100%;
-    border-radius: 200px;
+    /* border-radius: 200px; */
 }
 
 
@@ -523,4 +523,56 @@ a{
     padding: 10px 20px;
     border-radius: 21px;
 
+}
+
+
+.restaurant{
+    background-image: url(images/Restaurant__img.png);
+    /* height: 100%; */
+}
+
+.rest__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    margin-top: 150px;
+}
+
+.rest__title, .rest__title-sec{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 54px;
+    line-height: 56px;
+    color: #fff;
+
+}
+
+.rest__title-sec::before{
+    content: "weekly";
+    color: #1AC94B;
+    margin-right: 10px;
+}
+
+.rest__btn{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 18px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 20px 40px;
+    border-radius: 80px;
+    background-color: #1AC94B;
+    color: #fff;
+    border: none;
+    margin-top: 70px;
+}
+
+.rest__btn:hover{
+    transition: 0.1s;
+    background-color: #fff;
+    border: 2px solid #1AC94B;
+    color: #1AC94B;
 }
