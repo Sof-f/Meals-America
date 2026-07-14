@@ -50,6 +50,7 @@ a{
     vertical-align: middle;
     text-transform: uppercase;
     font-family: "Ubuntu", sans-serif;
+    cursor: pointer;
 
 }
 
@@ -148,6 +149,7 @@ a{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-top: 20px;
 
 }
 
@@ -181,4 +183,68 @@ a{
     font-weight: 400;
     font-size: 16px;
     vertical-align: middle;
+}
+
+.about{
+    background-color: #f9f9f9;
+}
+
+.about__content{
+    position: relative;
+    margin-top: 100px;
+
+}
+
+.about__grass{
+    position: absolute;
+    top: -80px;
+    left: -100px;
+
+
+}
+
+.about__title{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 48px;
+    vertical-align: middle;
+}
+
+.about__description{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about__subtitle{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: Book;
+    font-size: 20px;
+    line-height: 32px;
+    vertical-align: middle;
+    width: 600px;
+}
+
+.about__dish{
+    position: absolute;
+    top: -50px;
+    right: -150px;
+    width: 700px;
+}
+
+.btn__about{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #ffffff;
+    border: 2px solid #05581C;
+    color: #05581C;
+    padding: 15px 26px;
+    border-radius: 32px;
 }
