@@ -765,6 +765,24 @@ a{
 
 .contact__brocoli{
     position: absolute;
-    bottom: -80px;
+    bottom: -60px;
     right: 0;
+}
+
+.rights{
+    background-color: #195A00;
+    color: #fff;
+}
+
+.all__rights{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: Book;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+}
+
+.a__rights{
+    border-bottom:2px solid #fff ;
 }
