@@ -668,3 +668,103 @@ a{
     margin-top: 15px;
 }
 
+
+
+
+
+
+
+
+
+
+.contact{
+    background-color: #E0F0DA4D;
+    position: relative;
+
+}
+
+.contact__content{
+    padding: 56px 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contact__logo{
+    margin-bottom: 15px;
+}
+
+.contact__subtitle{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: Book;
+    font-size: 14px;
+    line-height: 24px;
+    width: 300px;
+    color: #4D6C40;
+}
+
+.a__contact{
+    border-bottom: 2px solid #4D6C40;
+}
+
+.contact__title{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 20px;
+    line-height: 28px;
+    color: #333333;
+    margin-bottom: 15px;
+    vertical-align: middle;
+}
+
+.contact__description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.map{
+    width: 220px;
+}
+
+.contact__description-item{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.contact__img{
+    height: 25px;
+}
+
+.contact__info{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 26px;
+    color: #333333;
+    background-color: transparent;
+    border: none;
+    text-align: left;
+    margin-left: 0;
+    padding-left: 0;
+
+}
+
+.contact__info:hover{
+    transition: 0.1s;
+    color: #08ac37;
+    cursor: pointer;
+}
+
+
+
+.contact__brocoli{
+    position: absolute;
+    bottom: -80px;
+    right: 0;
+}
