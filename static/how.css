@@ -104,3 +104,42 @@
     margin-top: 15px;
 
 }
+
+.who2{
+    position: relative;
+    background-color: #E0F0DA4D;
+    margin-top: 100px;
+
+}
+
+.who2__content{
+    width: 750px;
+    padding: 100px 0 80px 0;
+}
+
+.who2__title{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 36px;
+    line-height: 140%;
+    vertical-align: middle;
+    color: #333333;
+}
+
+.who2__subtitle{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 18px;
+    line-height: 140%;
+    vertical-align: middle;
+    color: #586F5E;
+    margin-top: 30px;
+}
+
+.who2__img{
+    position: absolute;
+    bottom: 0px;
+    right: 100px;
+}
