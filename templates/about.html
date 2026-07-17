@@ -11,10 +11,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+ID:wght@100..400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="../static/about.css">
     <title>about</title>
 </head>
 <body>
-    
+        {% include "header.html" %}
+
+    {% block content %}
+        <div class="about1">
+            <div class="about1__container">
+                <img class="about1__img" src="../static/images/about__grass.png" alt="#">
+                <div class="about1__description">
+                    <h2 class="about1__title">Welcome to Meals America!</h2>
+                    <p class="about1__subtitle">Meals America is a local business located in Orange County, FL. We deliver nutritious and healthy meals to eligible seniors every week in all 67 counties in Florida. We proudly serve anyone on long-term care (assisting elderly to age at home), chronic care, injury, short-term disability, post-discharge care. We provide meals to eligible with Medicare/Medicaid, and other managed care organizations in FL.</p>
+                    <p class="about1__subtitle">Our meals are for anyone who is unable to cook and prepare meals for themselves, or simply individuals and caregivers who would love to enjoy a fresh and easy meal. Our priority is our customer’s health. We care about each preference and dietary needs; therefore, we provide a variety of meal options and have options for low-sodium, gluten-free, Kosher, and vegetarian meals, allowing each customer to customize their meal plan to their preference. Meals America delivers ready-to-go meals that require NO preparation and only need to be heated so that our customers can enjoy healthy meals in minutes that taste like homemade meal they’d cook for themselves!</p>
+                </div>
+                <img class="about1__brokoli-oneMore" src="../static/footer__images/brokoli.png" alt="#">
+                <!-- <img class="about__dish" src="../static/images/about__dish.png" alt="#"> -->
+                <img class="about1__brokoli" src="../static/footer__images/brokoli.png" alt="#" >
+            </div>
+        </div>
+    {% endblock %}
+
+    {% include "footer.html" %}
 </body>
 </html>

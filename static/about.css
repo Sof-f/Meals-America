@@ -1,0 +1,57 @@
+.about1{
+    position: relative;
+}
+
+.about1__container{
+    padding: 100px 280px;
+}
+
+.about1__description{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about1__title{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 48px;
+    line-height: 140%;
+    text-align: center;
+    vertical-align: middle;
+    color: #333333;
+    /* position: relative; */
+}
+
+.about1__subtitle{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: Book;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    vertical-align: middle;
+    color: #626262;
+}
+
+.about1__img{
+    position: absolute;
+    top: 20px;
+    left: 300px;
+
+}
+
+.about1__brokoli{
+    position: absolute;
+    bottom: -100px;
+    left: 0px;
+    transform: scaleX(-1);
+    z-index: 3;
+}
+
+.about1__brokoli-oneMore{
+    position: absolute;
+    bottom: 50%;
+    right: 0;
+}

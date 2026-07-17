@@ -8,7 +8,7 @@ def index():
     return render_template('main.html')
 
 # Ваш старый маршрут, который вы прописали в HTML
-@app.route('/about-us')
+@app.route('/about')
 def page1():
     return render_template('about.html')
 
