@@ -531,7 +531,7 @@ a{
 
 
 .restaurant{
-    background-image: url(images/Restaurant__img.png);
+    background-image: url(../static/images/Restaurant__img.png);
     /* height: 100%; */
 }
 
