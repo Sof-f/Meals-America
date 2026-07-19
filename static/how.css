@@ -204,3 +204,122 @@ font-family: "Ubuntu", sans-serif;
     vertical-align: middle;
 
 }
+
+.aging__title{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 36px;
+    line-height: 140%;
+    text-align: center;
+    vertical-align: middle;
+    color: #333333;
+    margin-bottom: 40px;
+}
+
+.aging__subtitle{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 18px;
+    line-height: 140%;
+    text-align: center;
+    vertical-align: middle;
+    color: #757575;
+    margin-bottom: 35px;
+}
+
+.aging__paragraph{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    vertical-align: middle;
+    color: #565656;
+    margin-bottom: 20px;
+}
+
+.req__content{
+    margin-bottom: 100px;
+}
+
+.req__title{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #4F4F4F;
+    margin-bottom: 20px;
+}
+
+.req__list{
+    gap: 10px;
+}
+
+.req__list-title::before{
+    content: "•";
+    margin-right: 5px;
+}
+
+.req__list-title{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    vertical-align: middle;
+    color: #565656;
+}
+
+
+.include__title{
+    font-family:  "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #4F4F4F;
+    margin-bottom: 23px;
+}
+
+.include__content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.include__list{
+    gap: 5px;
+}
+
+.include__list-item{
+    font-family:  "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    vertical-align: middle;
+    color: #565656;
+}
+
+.include__list-item::before{
+    content: "•";
+    margin-right: 5px;
+}
+
+.include__after{
+    font-family:  "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    vertical-align: middle;
+    color: #565656;
+}
+
+
