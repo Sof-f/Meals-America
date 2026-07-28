@@ -1,0 +1,149 @@
+.start__contact{
+    margin: 100px 0 100px;
+}
+
+.get-start__content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 200px;
+}
+
+.get-start__item{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.get-start__img{
+    width: 25px;
+    height: 25px;
+}
+
+.get-start__title{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 19px;
+    line-height: 28px;
+    vertical-align: middle;
+    color: #333;
+    width: 200px;
+}
+
+.bottom-item{
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* --- ВАШИ ОРИГИНАЛЬНЫЕ СТИЛИ БЕЗ ИЗМЕНЕНИЙ --- */
+.get-started {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.get__title {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 48px;
+    line-height: 140%;
+    text-align: center;
+    color: #333;
+}
+
+.get__subtitle {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 140%;
+    text-align: center;
+    color: #757575;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.ui-form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Ровно 3 колонки одинакового размера */
+    gap: 35px;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-label {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 140%;
+    vertical-align: middle;
+    color: #757575;
+}
+
+.form-input, .form-select, .textarea-input {
+    height: 50px;
+    border: 1px solid #B5D2BD;
+    border-radius: 10px;
+    padding: 0 15px; /* Внутренние отступы для текста внутри полей */
+    box-sizing: border-box;
+}
+
+.required::after {
+    content: "*";
+    color: red;
+    margin-right: 10px;
+}
+
+.submit-btn {
+    padding: 18px 40px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    border-radius: 40px;
+    margin-top: 30px;
+    cursor: pointer;
+    border: none;
+}
+
+.submit-btn.green {
+    background-color: #B5D2BD;
+    color: #333;
+}
+
+/* --- НОВЫЕ ПРАВИЛА: ИСПРАВЛЕНИЕ ДЛЯ ТЕКСТОВОГО ПОЛЯ И КНОПКИ --- */
+
+/* Заставляем контейнер текстового поля растянуться на все 3 колонки */
+.textarea-container-block {
+    grid-column: span 3;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+/* Сбрасываем фиксированную высоту 50px для textarea, чтобы rows="7" работал корректно */
+.textarea-input {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+}
+
+/* Заставляем контейнер кнопки растянуться на все 3 колонки под текстовым полем */
+.submit-container-block {
+    grid-column: span 3;
+    display: flex;
+    justify-content: flex-start; /* Кнопка будет стоять слева на всю длину. Если нужно по центру — напишите center */
+}

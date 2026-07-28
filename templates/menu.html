@@ -18,6 +18,7 @@
 
     {% include "header.html" %}
 
+    {% block content %}
     <main>
         <section class="menu__images">
             <div class="container__menu">
@@ -53,6 +54,7 @@
         </section>
 
     </main>
+    {% endblock %}
 
     {% include "footer.html" %}
 

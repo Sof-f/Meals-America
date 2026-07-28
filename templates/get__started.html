@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="../static/reset.css">
+    <link rel="icon" href="images/faviocon-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+ID:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/get__started.css">
+    <title>Get Started</title>
+</head>
+<body>
+    {% include "header.html" %}
+
+    {% block content %}
+        <main>
+            <section class="get-start__contact">
+                <div class="container">
+                    <div class="get-start__content">
+                        <div class="get-start__item">
+                            <img class="get-start__img" src="../static/footer__images/footer__map.png" alt="#">
+                            <h3 class="get-start__title">1733 Benbow Ct, Ste 3, Apopka, FL, 32703</h3>
+                        </div>
+                        <div class="get-start__item">
+                            <img class="get-start__img" src="../static/footer__images/footer__phone.png" alt="">
+                            <h3 class="get-start__title">(786) 600-59-09</h3>
+                        </div>
+                        <div class="get-start__item">
+                            <img class="get-start__img" src="../static/images/who__time-icon.png" alt="#">
+                            <h3 class="get-start__title">Monday - Friday 9:00 AM - 5:00 PM</h3>
+                        </div>
+                      
+                    </div>
+                    <div class="get-start__item bottom-item">
+                        <img class="get-start__img bottom" src="../static/footer__images/footer__email.png" alt="#">
+                        <h3 class="get-start__title bottom">supportmealsamericafl.com</h3>
+                    </div>
+                </div>
+            </section>
+            <section class="get-started">
+                <div class="container">
+                    <!-- ТИТУЛ И СУБТИТРЫ ВЕРНУЛИСЬ НА СВОЕ МЕСТО -->
+                    <div class="get__content">
+                        <h2 class="get__title">Get started</h2>
+                        <h4 class="get__subtitle">Please complete the form below. Due to current high demand, we will do our best to reply back to you within 48 business hours.</h4>
+                    </div>
+                    
+                    <div class="get-started-section">
+                        <!-- Метод POST и токен Flask-WTF на месте -->
+                        <form method="POST" action="" class="ui-form">
+                            
+                            {{ form.hidden_tag() }}
+
+                            <div class="form-group">
+                                {{ form.Name.label(class="form-label required") }}
+                                {{ form.Name(class="form-input") }}
+                                {% for error in form.Name.errors %}
+                                    <span style="color: red;">[{{ error }}]</span>
+                                {% endfor %} 
+                            </div>
+
+                            <div class="form-group">
+                                {{ form.Organization.label(class="form-label") }}
+                                {{ form.Organization(class="form-input") }}
+                            </div>
+
+                            <div class="form-group">
+                                {{ form.Phone.label(class="form-label required") }}
+                                {{ form.Phone(class="form-input") }}
+                                {% for error in form.Phone.errors %}
+                                    <span style="color: red;">[{{ error }}]</span>
+                                {% endfor %} 
+                            </div>
+
+                            <div class="form-group">
+                                {{ form.Email.label(class="form-label") }}
+                                {{ form.Email(class="form-input") }}
+                            </div>
+
+                            <div class="form-group">
+                                {{ form.City.label(class="form-label required") }}
+                                {{ form.City(class="form-input") }}
+                                {% for error in form.City.errors %}
+                                    <span style="color: red;">[{{ error }}]</span>
+                                {% endfor %} 
+                            </div>
+
+                            <div class="form-group">
+                                {{ form.State.label(class="form-label required") }}
+                                {{ form.State(class="form-input") }}
+                                {% for error in form.State.errors %}
+                                    <span style="color: red;">[{{ error }}]</span>
+                                {% endfor %} 
+                            </div>
+
+                            <div class="form-group">
+                                {{ form.Country.label(class="form-label required") }}
+                                {{ form.Country(class="form-input") }}
+                                {% for error in form.Country.errors %}
+                                    <span style="color: red;">[{{ error }}]</span>
+                                {% endfor %} 
+                            </div>
+
+                            <div class="form-group">
+                                {{ form.Zip.label(class="form-label required") }}
+                                {{ form.Zip(class="form-input") }}
+                                {% for error in form.Zip.errors %}
+                                    <span style="color: red;">[{{ error }}]</span>
+                                {% endfor %} 
+                            </div>
+
+                            <div class="form-group">
+                                {{ form.About.label(class="form-label required") }}
+                                {{ form.About(class="form-select") }}
+                                {% for error in form.About.errors %}
+                                    <span style="color: red;">[{{ error }}]</span>
+                                {% endfor %} 
+                            </div>
+
+                            <!-- ТЕКСТОВОЕ ПОЛЕ: Обернуто в класс-контейнер для изоляции от сетки -->
+                            <div class="textarea-container-block">
+                                {{ form.Comment.label(class="form-label textarea-label") }}
+                                {{ form.Comment(class="textarea-input", rows="7") }}
+                            </div>
+
+                            <!-- КНОПКА: Обернута в класс-контейнер для изоляции от сетки -->
+                            <div class="submit-container-block">
+                                {{ form.Submit(class="submit-btn green") }}
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+    {% endblock %}
+
+    {% include "footer.html" %}
+    
+</body>
+</html>
