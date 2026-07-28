@@ -1,0 +1,85 @@
+.container__menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* по горизонтали */
+    gap: 15px;
+    padding: 50px 100px;
+
+}
+
+.instruc__content{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.instruc__title{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 36px;
+    line-height: 140%;
+    text-align: center;
+    color: #333;
+}
+
+.instruc__subtitle{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 18px;
+    line-height: 140%;
+    text-align: center;
+    color: #757575;
+}
+
+.instruc__instruc{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.instruc__item{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px 40px;
+    margin-left: 20px;
+    width: 400px;
+    box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.15);
+}
+
+.instruc__desc-title{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    vertical-align: middle;
+    color: #363333;
+    margin-bottom: 10px;
+}
+
+.instruc__desc-subtitle{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    vertical-align: middle;
+    color: #666;
+}
+
+.instruc__img{
+    height: 70px;
+    align-self: center;
+}
+
+.instruc__bottom{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 18px;
+    line-height: 140%;
+    text-align: center;
+    vertical-align: middle;
+    color: #333;
+}

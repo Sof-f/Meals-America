@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/reset.css">
+    <link rel="icon" href="images/faviocon-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+ID:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/menu.css">
+    <title>Menu</title>
+</head>
+<body>
+
+    {% include "header.html" %}
+
+    <main>
+        <section class="menu__images">
+            <div class="container__menu">
+                <img class="menu__img" src="../static/images/menu__1.png" alt="#">
+                <img class="menu__img" src="../static/images/menu__2.png" alt="#">
+            </div>
+        </section>
+        <section class="instruction">
+            <div class="container">
+                <div class="instruc__content">
+                    <h2 class="instruc__title">HEATING INSTRUCTIONS:</h2>
+                    <h4 class="instruc__subtitle">Food must be cooked thoroughly to 165°F. Appliances vary, adjust cooking times as needed.</h4>
+                    <div class="instruc__instruc">
+                        <div class="instruc__item">
+                            <img class="instruc__img" src="../static/images/microwave__oven.png" alt="#" >
+                            <div class="instruc__description">
+                                <h2 class="instruc__desc-title">Microwave Oven</h2>
+                                <h4 class="instruc__desc-subtitle">Directions developed with 1000-watt microwave ovens.Heat for 4 minutes on full power. Stir and heat an additional 1-2 minutes. Let stand for about 1 minute</h4>
+                            </div>
+                        </div>
+                        <div class="instruc__item">
+                            <img class="instruc__img" src="../static/images/conventional__oven.png" alt="#" >
+                            <div class="instruc__description">
+                                <h2 class="instruc__desc-title">Conventional Oven</h2>
+                                <h4 class="instruc__desc-subtitle">Preheat Oven to 350°FCook on baking sheet in center of oven 35-40 minutes. Let stand for about 1 minute.</h4>
+                            </div>
+                        </div>
+                 
+                    </div>
+                   <h3 class="instruc__bottom">Occasionally, any meal delivered may be substituted without notice based on product availability.</h3>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    {% include "footer.html" %}
+
+</body>
+</html>

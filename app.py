@@ -14,5 +14,9 @@ def about_page1():
 def how_page():
     return render_template('how.html')
 
+@app.route('/menu')
+def menu_page():
+    return render_template('menu.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
