@@ -41,6 +41,7 @@ def how_page():
 def menu_page():
     return render_template('menu.html')
 
+
 @app.route('/get-started', methods=['GET', 'POST'])
 def get_sterted():
     form = LoginForm()
@@ -54,14 +55,11 @@ def get_sterted():
         print(f"Email:       {form.Email.data}")
         print(f"City:       {form.City.data}")
         print(f"State: {form.State.data}")
-        print(f"Country: {form.Country.data}") # Добавили в принты вашу страну
+        print(f"Country: {form.Country.data}")
         print(f"Zip-код:     {form.Zip.data}")
         print(f"Who:{form.About.data}")
         print(f"Comment: {form.Comment.data}")
         
-        # ========================================================
-        # 2. ДОБАВИЛИ СОХРАНЕНИЕ ДАННЫХ В ТАБЛИЦУ
-        # ========================================================
         new_order = Order(
             name=form.Name.data,
             organization=form.Organization.data,
@@ -75,23 +73,18 @@ def get_sterted():
             comment=form.Comment.data
         )
         db.session.add(new_order)
-        db.session.commit() # Физически записываем в site.db
-        print("Successfully saved to database!")
-        print("="*40 + "\n")
-        
-        # Перенаправляем пользователя на страницу Спасибо
-        return redirect(url_for('thank_you'))
+        db.session.commit()
+
+        return render_template('main.html')
 
         
     else:
         if form.errors: # Печатаем ошибки только если они реально есть при POST-запросе
             print("Something gone wrong:", form.errors)
   
-    return render_template('get__started.html', form=form)
+        return render_template('get__started.html', form=form)
 
-@app.route('/thank-you')
-def thank_you():
-    return "<h1>Thank you! Your application has been successfully submitted and saved.</h1>"
+
 
 if __name__ == '__main__':
     app.run(debug=True)
